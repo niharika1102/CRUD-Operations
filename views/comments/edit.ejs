@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel = 'stylesheet' href = '/edit.css' />
+  <title>Edit comments</title>
+</head>
+
+<body>
+  <h1>Edit comment</h1>
+  <!-- ?_method=PATCH is used to treat the post request as the patch request using methodOverride.-->
+  <form method="POST" action="/comments/<%= comment.id %>?_method=PATCH">          
+    <div>
+      <textarea name="comment" id="" cols="30" rows="10"><%= comment.comment %> </textarea>
+    </div>
+    <br>
+    <div>
+      <button>Save Changes</button>
+    </div>
+  </form>
+</body>
+
+</html>

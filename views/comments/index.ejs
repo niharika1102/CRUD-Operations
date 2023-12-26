@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+
+<html>
+
+    <head>
+
+        <meta charset = 'UTF-8' />
+
+        <meta name = 'viewport' content = 'width = device-width, initial-scale = 1.0' />
+
+        <link rel = 'icon' type = 'image/x-icon' href = '' >
+
+        <link rel = 'stylesheet' href = '/index.css' />
+
+        <title>
+
+            Index of all comments
+
+        </title>
+
+    </head>
+
+    <body>
+
+        <h1>
+
+            Showing all comments here!!
+
+        </h1>
+
+        <div>
+
+            <ul>
+
+                <% for (let c of comments) { %>
+                    <li>
+
+                        <b>
+                        
+                            <%= c.username %> 
+
+                        </b>
+                        
+                        : <%= c.comment %>
+
+                        <a href = "/comments/<%= c.id %>">
+
+                            (Details)
+
+                        </a>
+
+                    </li>
+
+                    <br>
+                <% } %>
+
+            </ul>
+
+            <a href = "/comments/new">
+
+                Add a new comment
+
+            </a>
+
+        </div>
+
+        <script src = '.js'></script>
+
+    </body>
+
+</html>

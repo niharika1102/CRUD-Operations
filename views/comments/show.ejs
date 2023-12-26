@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+
+<html>
+
+    <head>
+
+        <meta charset = 'UTF-8' />
+
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+
+        <meta name = 'viewport' content = 'width = device-width, initial-scale = 1.0' />
+
+        <link rel = 'stylesheet' href = '/show.css' />
+
+        <title>
+
+            Comment show page
+
+        </title>
+
+    </head>
+
+    <body>
+
+        <h1>
+
+            Showing elaborated comment here!!
+
+        </h1>
+
+        <div>
+
+            <p>
+
+                <b>
+
+                    Author: 
+
+                </b>
+
+                <%= comment.username %>
+
+            </p>
+
+            <p>
+
+                <b>
+
+                    Comment: 
+
+                </b>
+
+                <%= comment.comment %>
+
+            </p>
+
+        </div>
+
+        <a href = "/comments">
+
+            View all comments
+
+        </a>
+
+        <br>
+        <br>
+
+        <a href="/comments/<%= comment.id %>/edit">Edit Comment</a>
+
+        <br>
+        <br>
+
+        <form method = "post" action="/comments/<%= comment.id %>/?_method=DELETE">
+            <button>
+
+                Delete comment
+
+            </button>
+        </form>
+
+        <!-- <script src = '.js'></script> -->
+
+    </body>
+
+</html>

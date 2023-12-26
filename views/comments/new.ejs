@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+
+<html>
+
+    <head>
+
+        <meta charset = 'UTF-8' />
+
+        <meta name = 'viewport' content = 'width = device-width, initial-scale = 1.0' />
+
+        <link rel = 'icon' type = 'image/x-icon' href = '' >
+
+        <link rel = 'stylesheet' href = '/new.css' />
+
+        <title>
+
+            New comments form
+
+        </title>
+
+    </head>
+
+    <body>
+
+        <h1>
+
+            Make a new comment
+
+        </h1>
+
+        <div>
+
+            <form action = "/comments" method = "post">
+
+                <section>
+
+                    <label for = "username">
+
+                        <b>
+
+                            Enter your username
+
+                        </b>
+
+                    </label>
+                    
+                    <input type = "text" id = "username" placeholder = "username" name = "username">
+
+                </section>
+
+                <br>
+
+                <section>
+
+                    <label for="comment"> 
+                        
+                        <b>
+
+                            Enter your comment
+
+                        </b>
+
+                    </label>
+
+                    <br>
+
+                    <textarea name = "comment" id = "comment" rows = "4" cols = "30">
+
+                    </textarea>
+
+                </section>
+
+                <br>
+
+                <section>
+
+                    <button>
+
+                        Submit
+
+                    </button>
+
+                </section>  
+
+            </form>
+
+        </div>
+
+        <br>
+
+        <a href = "/comments">
+
+            View all comments
+
+        </a>
+
+        <script src = '.js'></script>
+
+    </body>
+
+</html>
