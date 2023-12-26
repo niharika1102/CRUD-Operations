@@ -29,4 +29,4 @@ npm i method-override
 npm i ejs
 ```
 
-After adding these packages to the project, the 
+After adding these packages, the project is ready to work. 
