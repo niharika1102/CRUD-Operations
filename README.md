@@ -4,3 +4,7 @@ This is a comment management system wherein the user can Create, Read, Update an
 `$ ls`
  /code
  hi
+
+```sh
+$hi
+```
