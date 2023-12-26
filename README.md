@@ -1,10 +1,25 @@
 # CRUD Operations
-This is a comment management system wherein the user can Create, Read, Update and Delete the comments. The CRUD operations performed have been developed using Express JS.
+This is a comment management system wherein the user can Create, Read, Update, and Delete comments. The CRUD operations performed have been developed using Express JS.
 
-`$ ls`
- /code
- hi
+To use this project, some npm packages need to be installed. They are: **Express JS, uuid, Body Parser and Method Override**.
 
+The commands to install them are as follows: 
+1. Express JS
 ```sh
-$hi
+npm i express
+```
+
+2. uuid
+```sh
+npm i uuid
+```
+
+3. Body Parser
+```sh
+npm i body-parser
+```
+
+4. Method Override
+```sh
+npm i method-override
 ```
